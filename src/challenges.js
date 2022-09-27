@@ -22,10 +22,10 @@ function splitSentence(frase) {
 }
 
 // Desafio 4
-function concatName() {
- let ultimo = concatName.length -1;
- let primeiro = concatName[0];
- return ultimo + primeiro;
+function concatName(nomes) {
+  let primeiroNome = nomes[0];
+  let ultimoNome = nomes[nomes.length-1];
+ return ultimoNome + ', ' + primeiroNome;
 }
 
 
@@ -35,16 +35,26 @@ function footballPoints(wins, ties) {
   let empates = ties*1;
   return vitorias + empates;
 }
-console.log (footballPoints(0,0))
+
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+
+function highestCount(numeros) {
+let contRepetido =0;
+let contNumero =0;
+let indexNumeroRepetido =0;
 }
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  if(cat1<cat2){ 
+  return 'cat1'
+}else if (cat2 <cat1){
+  return 'cat2'
+}else if (cat1 === cat2 === mouse){
+  return 'os gatos trombam e o rato foge'
 }
+} 
+
 
 // Desafio 8
 function fizzBuzz() {
