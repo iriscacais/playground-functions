@@ -15,7 +15,6 @@ function calcArea(base, height) {
 }
 
 // Desafio 3
-
 function splitSentence(frase) {
   let split = frase.split(' ');
   return split;
@@ -28,7 +27,6 @@ function concatName(nomes) {
  return ultimoNome + ', ' + primeiroNome;
 }
 
-
 // Desafio 5
 function footballPoints(wins, ties) {
   let vitorias = wins*3;
@@ -37,12 +35,19 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-
 function highestCount(numeros) {
-let contRepetido =0;
-let contNumero =0;
-let indexNumeroRepetido =0;
+let contRepetido =[0];
+for (let key in numeros){
+  let verifica = numeros[key];
+  for (let key2 in numeros){
+    if (numeros[key] === numeros[key2]){
+      contRepetido.push(numeros[key2]);
+    }
+  }
 }
+return contRepetido
+}//console.log (highestCount([9, 1, 2, 3, 9, 5, 7]))
+//console.log(contRepetido)
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
@@ -53,13 +58,28 @@ function catAndMouse(mouse, cat1, cat2) {
 }else if (cat1 === cat2 === mouse){
   return 'os gatos trombam e o rato foge'
 }
-} 
+} //console.log(catAndMouse(1,0,2))
 
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+
+function fizzBuzz(numeros) {
+  let arrayStrings =[ ];
+  for(let key in numeros){
+    if (numeros[key]%3===0 && numeros[key]%5===0){
+arrayStrings.push('fizzBuzz')
+    } else if (numeros[key]%5===0){
+    arrayStrings.push('buzz')
+}else if (numeros[key]%3===0){  
+arrayStrings.push('fizz')
+}else{
+  arrayStrings.push('bug!')
 }
+}return arrayStrings
+}
+
+
+
 
 // Desafio 9
 function encode() {
