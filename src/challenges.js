@@ -53,12 +53,14 @@ for (let key in numeros){
 }
 // Desafio 7 nao
 function catAndMouse(mouse, cat1, cat2) {
-if (mouse <cat2 && cat2<cat1){
+let distanciaCat1 = Math.abs(mouse - cat1);
+let distanciaCat2 = Math.abs(mouse - cat2);
+if (distanciaCat2 < distanciaCat1){
 return 'cat2'
-}else if (mouse==cat1 && mouse==cat2){
-  return 'os gatos trombam e o rato foge'
-}else if (mouse > cat1 && cat1 < cat2){
+}else if (distanciaCat1 < distanciaCat2){
   return 'cat1'
+}else if (distanciaCat1 === distanciaCat2){
+  return 'os gatos trombam e o rato foge'
 }
 }
 
