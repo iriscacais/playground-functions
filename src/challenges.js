@@ -1,9 +1,6 @@
 // Desafio 1
-const girafa = true;
-const elefante = true;
-const macaco = false;
 function compareTrue(palavraUm, palavraDois) {
-  if (palavraUm === true && palavraDois=== true){
+  if (palavraUm === true && palavraDois === true){
     return true;
   }
   return false;
