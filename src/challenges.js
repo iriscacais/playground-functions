@@ -49,7 +49,6 @@ for (let key in numeros){
     resultado +=1
      
   }}
-   console.log(resultado)
   return resultado
 }
 // Desafio 7 nao
@@ -83,28 +82,47 @@ arrayStrings.push('fizz')
 // Desafio 9
 
 function encode(palavra) {
-   let vogais = palavra.split('');
-   codigo = [{
-    a:1,
-    e:2,
-    i:3,
-    o:4,
-    u:5,
-    }]
+   let resultado =[];
     
-for(let key in vogais){
-    for (let key2 in codigo){
-      if (codigo[key2]===vogais[key]){
-     vogais[key] = codigo[key2];
+for(let key in palavra){
+      if (palavra[key]=== 'a'){
+     resultado.push(1);
+      }else if (palavra[key]=== 'e'){
+        resultado.push(2);
+      }else if (palavra[key]=== 'i'){
+      resultado.push(3);
+    }else if (palavra[key] === 'o'){
+      resultado.push(4);
+    }else if (palavra[key] === 'u'){
+      resultado.push(5);
+    }else{
+      resultado.push(palavra[key])
+    }
+  }
+  return resultado.join('')
+  }
+
+function decode(palavra) {
+  let resultado =[];
+    
+  for(let key in palavra){
+        if (palavra[key]=== '1'){
+       resultado.push('a');
+        }else if (palavra[key]=== '2'){
+          resultado.push('e');
+        }else if (palavra[key]=== '3'){
+        resultado.push('i');
+      }else if (palavra[key] === '4'){
+        resultado.push('o');
+      }else if (palavra[key] === '5'){
+        resultado.push('u');
+      }else{
+        resultado.push(palavra[key])
       }
     }
-  }//console.log(vogais)
-}//console.log(encode('hi there!'))
+    return resultado.join('')
+    }
 
-
-function decode() {
-  // seu código aqui
-}
 
 // Desafio 10
 function techList() {
