@@ -1,6 +1,6 @@
 // Desafio 1
 function compareTrue(palavraUm, palavraDois) {
-  if (palavraUm === true && palavraDois === true){
+  if (palavraUm === true && palavraDois === true) {
     return true;
   }
   return false;
@@ -8,7 +8,7 @@ function compareTrue(palavraUm, palavraDois) {
 
 // Desafio 2
 function calcArea(base, height) {
-  return (base*height)/2
+  return (base * height) / 2;
 }
 
 // Desafio 3
@@ -20,30 +20,29 @@ function splitSentence(frase) {
 // Desafio 4
 function concatName(nomes) {
   let primeiroNome = nomes[0];
-  let ultimoNome = nomes[nomes.length-1];
- return ultimoNome + ', ' + primeiroNome;
+  let ultimoNome = nomes[nomes.length - 1];
+return ultimoNome + ', ' + primeiroNome;
 }
 
 // Desafio 5
 function footballPoints(wins, ties) {
-  let vitorias = wins*3;
-  let empates = ties*1;
+  let vitorias = wins * 3;
+  let empates = ties * 1;
   return vitorias + empates;
 }
 
-// Desafio 6 
+// Desafio 6
 function highestCount(numeros) {
-//let contRepetido =[0];
 let maior = 0;
 let resultado =0;
-for (let key in numeros){
-  if (numeros[key]> maior || numeros[key]<0){
+for (let key in numeros) {
+  if (numeros[key]> maior || numeros[key]<0) {
     maior = numeros[key]
   }
   }
-     for(let key2 in numeros){
-  if (numeros[key2] === maior){
-    resultado +=1
+     for(let key2 in numeros) {
+  if (numeros[key2] === maior) {
+    resultado += 1
      
   }}
   return resultado
@@ -52,11 +51,11 @@ for (let key in numeros){
 function catAndMouse(mouse, cat1, cat2) {
 let distanciaCat1 = Math.abs(mouse - cat1);
 let distanciaCat2 = Math.abs(mouse - cat2);
-if (distanciaCat2 < distanciaCat1){
+if (distanciaCat2 < distanciaCat1) {
 return 'cat2'
-}else if (distanciaCat1 < distanciaCat2){
+}else if (distanciaCat1 < distanciaCat2) {
   return 'cat1'
-}else if (distanciaCat1 === distanciaCat2){
+}else if (distanciaCat1 === distanciaCat2) {
   return 'os gatos trombam e o rato foge'
 }
 }
@@ -64,15 +63,15 @@ return 'cat2'
 // Desafio 8 
 
 function fizzBuzz(numeros) {
-  let arrayStrings =[ ];
+  let arrayStrings = [ ];
   for(let key in numeros){
-    if (numeros[key]%3===0 && numeros[key]%5===0){
+    if (numeros[key]%3 === 0 && numeros[key]%5 === 0) {
 arrayStrings.push('fizzBuzz')
-    } else if (numeros[key]%5===0){
+    } else if (numeros[key]%5 === 0) {
     arrayStrings.push('buzz')
-}else if (numeros[key]%3===0){  
+}else if (numeros[key]%3 === 0) {  
 arrayStrings.push('fizz')
-}else{
+}else {
   arrayStrings.push('bug!')
 }
 }return arrayStrings
@@ -81,14 +80,14 @@ arrayStrings.push('fizz')
 // Desafio 9
 
 function encode(palavra) {
-   let resultado =[];
+   let resultado = [];
     
 for(let key in palavra){
-      if (palavra[key]=== 'a'){
+      if (palavra[key] === 'a'){
      resultado.push(1);
-      }else if (palavra[key]=== 'e'){
+      }else if (palavra[key] === 'e'){
         resultado.push(2);
-      }else if (palavra[key]=== 'i'){
+      }else if (palavra[key] === 'i'){
       resultado.push(3);
     }else if (palavra[key] === 'o'){
       resultado.push(4);
@@ -102,14 +101,14 @@ for(let key in palavra){
   }
 
 function decode(palavra) {
-  let resultado =[];
+  let resultado = [];
     
   for(let key in palavra){
-        if (palavra[key]=== '1'){
+        if (palavra[key] === '1'){
        resultado.push('a');
-        }else if (palavra[key]=== '2'){
+        }else if (palavra[key] === '2'){
           resultado.push('e');
-        }else if (palavra[key]=== '3'){
+        }else if (palavra[key] === '3'){
         resultado.push('i');
       }else if (palavra[key] === '4'){
         resultado.push('o');
