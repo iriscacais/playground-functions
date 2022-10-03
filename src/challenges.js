@@ -123,9 +123,17 @@ function decode(palavra) {
 
 
 // Desafio 10
-function techList() {
-  // seu código aqui
-}
+
+let arrayObjeto =[ ]
+function techList(tech, nome) {
+  for (let index = 0; index < tech.length; index +=1){
+  arrayObjeto.push([{tech:tech[index], name: nome}]);
+}if (tech.length <=0){
+ return 'Vazio!'
+  } else {
+   return arrayObjeto.sort()
+  }
+}  
 
 module.exports = {
   calcArea,
