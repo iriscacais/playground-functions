@@ -124,16 +124,22 @@ function decode(palavra) {
 
 // Desafio 10
 
-let arrayObjeto =[ ]
+
+
 function techList(tech, nome) {
-  for (let index = 0; index < tech.length; index +=1){
-  arrayObjeto.push([{tech:tech[index], name: nome}]);
+  let arrayObjeto =[ ];
+  let ordenado = tech.sort();
+  for (let index = 0; index < ordenado.length; index +=1){
+  arrayObjeto.push({tech:ordenado[index], name: nome,});
 }if (tech.length <=0){
  return 'Vazio!'
-  } else {
-   return arrayObjeto.sort()
+  } 
+  return arrayObjeto
   }
-}  
+
+
+
+
 
 module.exports = {
   calcArea,
