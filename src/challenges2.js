@@ -4,8 +4,8 @@ function generatePhoneNumber() {
 }
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+function triangleCheck(lineA, LineB, LineC) {
+  
 }
 
 // Desafio 13
