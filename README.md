@@ -1,5 +1,4 @@
-# Projeto Playground functions 
-
+# Projeto Playground functions  :carousel_horse:
 ## Desenvolvido no módulo de fundamentos do curso de desenvolvimento web da Trybe :rocket:
 
 ### Descrição do projeto
